@@ -1,6 +1,6 @@
 import uuid
 from django.db import models
-from djnago.urls import reverse
+from django.urls import reverse
 
 class Firm(models.Model):
     id = models.UUIDField(
