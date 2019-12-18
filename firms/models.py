@@ -1,7 +1,12 @@
+import uuid
 from django.db import models
 from djnago.urls import reverse
 
 class Firm(models.Model):
+    id = models.UUIDField(
+        primary_key=True,
+        default=uuid.uuid4,
+        editable=False)
     firm_title = models.TextField()
     firm_representative = models.TextField()
     firm_phone_number = models.TextField()
