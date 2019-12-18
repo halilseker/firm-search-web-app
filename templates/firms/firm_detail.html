@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+<!-- {% block title %}{{ object.firm_title }}{% endblock title %} -->
+
+{% block title %}{{ firm.firm_title }}{% endblock title %}
+
+{% block content %}
+<div class="firm-detail">
+  <h2><a href="">{{ firm.firm_title }}</a></h2>
+  <p>Firm Addres: {{ firm.firm_adress }}</p>
+  <!-- <p>Firm Addres: {{ object.firm_adress }}</p> -->
+  <p>Firm Phone Number: {{ firm.firm_phone_number }}</p>
+  <p>Firm Representative: {{ firm.firm_representative }}</p>
+  <p>Firm Email: {{ firm.firm_email }}</p>
+  <p>Firm Mobile Number: {{ firm.firm_mobile_number }}</p>
+  <p>Firm Services: {{ firm.firm_services }}</p>
+</div>
+
+{% endblock content%}
