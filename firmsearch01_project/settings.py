@@ -85,7 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         # 'NAME': os.path.join(BASE_DIR, 'sakaryateknokent2.db'),
-        'NAME': 'C:\\Users\\hibras\\Projects\\DjangoForBeginners\\firm-search-web-app\\sakaryateknokent2.db'
+        # 'NAME': 'C:\\Users\\hibras\\Projects\\DjangoForBeginners\\firm-search-web-app\\sakaryateknokent2.db'
+        'NAME': os.path.join(BASE_DIR, 'sakaryasfirms.db'),
     }
 }
 

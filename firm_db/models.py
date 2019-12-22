@@ -8,9 +8,7 @@
 from django.db import models
 from django.urls import reverse
 
-
-class Sautekfirm3(models.Model):
-      
+class Company(models.Model):
     firm_title = models.TextField(blank=True, null=True)
     firm_representative = models.TextField(blank=True, null=True)
     firm_phone_number = models.TextField(blank=True, null=True)
@@ -22,7 +20,7 @@ class Sautekfirm3(models.Model):
 
     class Meta:
         managed = True
-        db_table = 'sautekfirm3'
+        db_table = 'company'
 
     def __str__(self):
         return self.firm_title
