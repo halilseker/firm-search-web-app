@@ -28,4 +28,5 @@ urlpatterns = [
     # Local Apps
     path('', include('pages.urls')),
     path('firms/', include('firms.urls')),
+    path('firm_db/', include('firm_db.urls')),
 ]

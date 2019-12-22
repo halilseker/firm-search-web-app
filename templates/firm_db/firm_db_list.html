@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Teknokent Firms{% endblock title %}
+
+{% block content %}
+  {% for firm_db in firm_db_list %}
+    <div class="">
+      <!-- <h2><a href="">{{ object.firm_title }}</a></h2> -->
+      <h2><a href="{{ firm_db.get_absolute_url }}">{{ firm_db.firm_title }}</a></h2>
+    </div>
+  {% endfor %}
+{% endblock content %}

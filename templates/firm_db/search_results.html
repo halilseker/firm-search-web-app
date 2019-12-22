@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+<h1>Search Results </h1>
+{% for firm_db in firm_db_list %}
+  <div class="">
+    <h3><a href="{{ book.get_absolute_url }}">{{ firm_db.firm_title }}</a></h3>
+    <p>Firm Representative: {{ firm_db.firm_representative }}</p>
+    <p>Firm Phone Number: {{ firm_db.firm_phone_number }}</p>
+    <p>Firm Email: {{ firm_db.firm_email }}</p>
+    <p>Firm Address: {{ firm_db.firm_address }}</p>
+    <p>Firm Services: {{ firm_db.firm_services }}</p>
+    <p>Firm Mobile Number: {{ firm_db.firm_mobile_number }}</p>
+  </div>
+{% endfor %}
+{% endblock content %}
