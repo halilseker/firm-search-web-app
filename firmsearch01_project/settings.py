@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
     'firms.apps.FirmsConfig',
+    'firm_db.apps.FirmDbConfig',
     # 3rd Party
     'crispy_forms',
 
@@ -83,7 +84,8 @@ WSGI_APPLICATION = 'firmsearch01_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'NAME': os.path.join(BASE_DIR, 'sakaryateknokent2.db'),
+        'NAME': 'C:\\Users\\hibras\\Projects\\DjangoForBeginners\\firm-search-web-app\\sakaryateknokent2.db'
     }
 }
 
